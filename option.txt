@@ -1,0 +1,123 @@
+👨‍💻 USER KO YE STEPS FOLLOW KARNE BOLNA
+🧩 STEP 1: PROJECT EXTRACT
+
+👉 ZIP file extract kare:
+
+Right Click → Extract Here
+
+👉 folder open kare:
+
+advanced-chatgpt
+🧩 STEP 2: BACKEND SETUP
+
+👉 CMD open kare:
+
+cd advanced-chatgpt/backend
+
+👉 install dependencies:
+
+npm install
+📄 .env FILE BANANI HOGI
+
+👉 backend folder me file create kare:
+
+.env
+
+👉 isme likhe:
+
+MONGO_URI=mongodb://127.0.0.1:27017/chatgpt
+PORT=5000
+🧩 STEP 3: MONGODB START
+
+👉 agar local MongoDB installed hai:
+
+mongod
+
+👉 (ya MongoDB Compass open kar le)
+
+🧩 STEP 4: OLLAMA INSTALL & RUN
+
+👉 install kare:
+👉 Ollama
+
+👉 CMD me run kare:
+
+ollama serve
+
+👉 agar already running hai aur error aaye:
+
+Only one usage of each socket address
+
+👉 ignore karo (already running hai)
+
+👉 ab model download/run:
+
+ollama run llama3
+
+👉 test kare:
+
+What is JS?
+
+👉 exit:
+
+Ctrl + C
+🧩 STEP 5: BACKEND RUN
+
+👉 same CMD me:
+
+npm start
+
+👉 output:
+
+Server running on port 5000
+MongoDB Connected ✅
+🧩 STEP 6: FRONTEND SETUP
+
+👉 NEW CMD open kare:
+
+cd advanced-chatgpt/frontend
+
+👉 install dependencies:
+
+npm install
+🧩 STEP 7: FRONTEND RUN
+npm start
+
+👉 browser open hoga:
+
+http://localhost:3000
+🎯 FINAL RESULT
+
+👉 ab dusra banda:
+
+✅ Signup karega
+✅ Login karega
+✅ Chat karega (Ollama se)
+✅ Full UI work karega
+
+⚠️ IMPORTANT NOTES
+
+👉 agar chat reply nahi aaye:
+
+✔ check:
+
+ollama serve
+
+👉 aur backend console me error check kare
+
+💀 PRO TIP
+
+👉 usko ye bhi bol:
+
+npm install axios bcryptjs jsonwebtoken mongoose cors dotenv
+
+(agar dependency issue aaye)
+
+📄 BONUS (README.txt bana de)
+
+👉 tu ye bhi zip me daal sakta hai:
+
+1. cd backend → npm install → npm start
+2. start MongoDB
+3. run: ollama serve
+4. cd frontend → npm install → npm start
